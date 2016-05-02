@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "frontier_simple_form_numeric_input"
 
 Gem::Specification.new do |s|
   s.name        = "frontier_simple_form_numeric_input"
-  s.version     = FrontierSimpleFormNumericInput::VERSION
+  s.version     = "0.1.0"
   s.authors     = ["Jordan Maguire"]
   s.email       = ["jordan@thefrontiergroup.com.au"]
   s.homepage    = "https://github.com/thefrontiergroup/frontier_simple_form_numeric_input"
@@ -16,4 +15,7 @@ Gem::Specification.new do |s|
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+
+  s.add_dependency "rails", ">= 4"
+  s.add_dependency "simple_form", ">= 3"
 end

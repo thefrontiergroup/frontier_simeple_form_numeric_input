@@ -16,5 +16,5 @@ The `NumericInput`'s min and max values can be overriden as you normally would w
 
 ```ruby
 = simple_form_for(@user) do |f|
-  - f.input :age, input_html: {min: 18, max: 90}
+  = f.input :age, input_html: {min: 18, max: 90}
 ```

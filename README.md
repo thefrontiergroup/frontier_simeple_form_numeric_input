@@ -11,3 +11,10 @@ gem 'frontier_simple_form_numeric_input', github: 'thefrontiergroup/frontier_sim
 ## Usage
 
 Installing the gem will cause the `SimpleForm::Inputs::NumericInput` to be overrided automatically.
+
+The `NumericInput`'s min and max values can be overriden as you normally would with a `SimpleForm` input:
+
+```ruby
+= simple_form_for(@user) do |f|
+  - f.input :age, input_html: {min: 18, max: 90}
+```

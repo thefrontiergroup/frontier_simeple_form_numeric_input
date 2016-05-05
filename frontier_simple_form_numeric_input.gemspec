@@ -18,4 +18,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency "rails", ">= 4"
   s.add_dependency "simple_form", ">= 3"
+
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "sqlite3"
+  s.add_development_dependency "rspec_junit_formatter"
+  s.add_development_dependency "byebug"
+
 end
